@@ -1,0 +1,67 @@
+/***************allPart**************/
+
+.allTaskList {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaebeb;
+    padding: 2px;
+}
+
+
+/************part1*********************/
+
+.part1TaskList {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 2pt 2pt 10pt 2pt rgba(131, 131, 131, 0.452);
+}
+
+.part1TaskList button:first-child {
+    margin-left: 0px !important;
+}
+
+.part1TaskList button {
+    position: relative;
+    background-color: #7163ba;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    box-shadow: 1pt 1pt 4pt 1pt rgba(131, 131, 131, 0.664);
+    padding: 5px;
+    margin-left: 20px;
+    color: #ffff;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+/*********part2***************/
+
+.part2TaskList {
+    position: relative;
+    width: 100vw;
+    margin-top: 25px;
+    /* padding: 10px; */
+    /* overflow: hidden; */
+    /* border-radius: 20px; */
+    /* -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; */
+}
+
+.part2TaskList .sprintTask .sprintTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}

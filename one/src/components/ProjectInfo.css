@@ -1,0 +1,100 @@
+/******************allpart***********************/
+
+.allProjectInfo {
+    position: relative;
+    width: 100%;
+    /*height: 50px;
+    */
+    background-color: #ffffff;
+    overflow: hidden;
+    /* border: 2pt solid; */
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 1pt 1pt 2pt rgba(131, 131, 131, 0.452);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+/******************aiipart=>part1***********************/
+
+.allProjectInfo .generalInfoProjectInfo {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.allProjectInfo .generalInfoProjectInfo span {
+    /* background-color: greenyellow; */
+    /* margin-left: 10px; */
+}
+
+.allProjectInfo .generalInfoProjectInfo span:first-child {
+    margin-left: 0px !important;
+}
+
+.allProjectInfo .generalInfoProjectInfo .members {
+    /*position: absolute;
+    */
+}
+
+.allProjectInfo .generalInfoProjectInfo .members {
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-image: url(./public/photo/plus.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.allProjectInfo .generalInfoProjectInfo button:hover {
+    background-color: #87878727;
+}
+
+.allProjectInfo .generalInfoProjectInfo .deleteProjectBtn {
+    float: right;
+    margin-right: 50px;
+    width: 17px;
+    height: 17px;
+    background-image: url(./public/photo/delete.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/***************aiipart=>part2********************/
+
+.allProjectInfo .membersProjectInfoOpen {
+    /* background-color: blueviolet; */
+    margin-top: 5px;
+    /* padding: 5px; */
+}
+
+.allProjectInfo .membersProjectInfoOpen {}
+
+.allProjectInfo .membersProjectInfoOpen .addNewMember {
+    padding: 8px;
+}
+
+.allProjectInfo .membersProjectInfoClose {
+    background-color: blueviolet;
+    height: 0px;
+    overflow: hidden;
+}
+
+.allProjectInfo .membersProjectInfoOpen .specialMemberProjectInfo {
+    border: 2pt solid black;
+}
+
+.allProjectInfo .membersProjectInfoOpen .specialMemberProjectInfo .generalInfo {
+    background-color: aqua;
+}
+
+.allProjectInfo .membersProjectInfoOpen .specialMemberProjectInfo .generalInfo button {
+    position: absolute;
+    right: 0px;
+    background-color: green;
+}

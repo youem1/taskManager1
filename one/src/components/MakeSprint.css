@@ -1,0 +1,21 @@
+.tasksClose {
+    height: 0px;
+    overflow: hidden;
+}
+
+.tasksOpen {
+    height: auto;
+}
+
+.allMakeSprint {
+    background-color: #ffffff;
+    box-shadow: 1pt 1pt 4pt 2pt rgba(131, 131, 131, 0.452);
+    border-radius: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.allMakeSprint .sprintTask .sprintTitle {}

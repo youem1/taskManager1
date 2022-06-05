@@ -1,0 +1,45 @@
+/*****************allTaskGroup*********/
+
+.allTaskMaker {
+    position: relative;
+    background-color: #ffff;
+    border-top: #878787 solid 2pt;
+    padding: 5px;
+}
+
+
+/***********part1**********/
+
+.part11TaskMaker {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part1TaskMaker .part12TaskMaker {
+    display: flex;
+    width: 100vw;
+    background-color: chartreuse;
+}
+
+.part1TaskMaker .part12TaskMaker button {
+    position: relative;
+    background-color: blue;
+}
+
+
+/***********part2********/
+
+.part2TaskMakerOpen {
+    position: relative;
+    width: 100vw;
+    /* background-color: brown; */
+    border-top: #cccccc solid 2pt
+}
+
+.part2TaskMakerClose {
+    position: relative;
+    width: 100vw;
+    height: 0px;
+    /* background-color: brown; */
+    overflow: hidden;
+}

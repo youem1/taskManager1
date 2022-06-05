@@ -1,0 +1,158 @@
+.allMainMenue {
+    position: fixed;
+    /* background-color: red; */
+    width: 400px;
+    height: 400px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.part1MainMenue,
+.part2MainMenue,
+.part3MainMenue,
+.part4MainMenue,
+.part5MainMenue {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    /* background-color: yellow;
+    border: 1pt solid black; */
+}
+
+.buttonMainMenue,
+.button1MainMenue,
+.button2MainMenue,
+.button3MainMenue,
+.button4MainMenue,
+.button5MainMenue {
+    position: absolute;
+    /* background-color: brown; */
+    border: 2pt solid white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 2pt 2pt 2pt 2pt rgba(255, 255, 255, 0.565);
+}
+
+.buttonMainMenue,
+.button1MainMenue {
+    right: 0px;
+}
+
+.button1MainMenue,
+.button5MainMenue {
+    background-image: url(./public/photo/next.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2663EB;
+}
+
+.button1MainMenue {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.button2MainMenue {
+    background-image: url(./public/photo/project-icon.png);
+    background-size: 80%;
+    background-color: #F59E0B;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 20%;
+}
+
+.button3MainMenue {
+    background-image: url(./public/photo/task-icon.png);
+    background-size: 75%;
+    background-color: #7B3AED;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 40%;
+}
+
+.button4MainMenue {
+    right: 60%;
+    background-color: #EC479A;
+    background-image: url(public/photo/user.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button5MainMenue {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+.buttonMainMenue {
+    background-color: azure;
+    box-shadow: 0pt 0pt 0pt 0pt;
+}
+
+.open {}
+
+.close:first-child {
+    position: absolute;
+    margin-top: 17px !important;
+}
+
+.close div {
+    position: static;
+    width: 70%;
+    height: 0.75pt;
+    background-color: #7163ba;
+    margin: 12px auto;
+}
+
+.open div:first-child,
+.open div:last-child {
+    position: absolute;
+    width: 100%;
+    height: 0.75pt;
+    background-color: #7163ba;
+    top: 50%;
+    /* left: 50%; */
+    transform: translateY( -50%) translateX(-50%);
+    -webkit-transform: translateY( -50%) translateX(-50%);
+    -moz-transform: translateY( -50%) translateX(-50%);
+    -ms-transform: translateY( -50%) translateX(-50%);
+    -o-transform: translateY( -50%) translateX(-50%);
+}
+
+.open div:first-child {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.open div:last-child {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.open div:nth-child(2) {
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    background-color: #79ed3a;
+    left: -100px;
+    /* visibility: hidden; */
+}

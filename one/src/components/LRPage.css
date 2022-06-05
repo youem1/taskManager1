@@ -1,0 +1,188 @@
+/*************allPart**********/
+
+.allLRPage {
+    position: fixed;
+    background-color: #f3f4f6;
+    width: 100vw;
+    height: 100vh;
+}
+
+.backgroundLRPage {
+    position: absolute;
+    width: 480px;
+    height: 600px;
+    top: -9px;
+    left: 50%;
+    background-image: url(./public/photo/Group.png);
+    transform: translate(-20%);
+    /* background-color: bisque; */
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    -o-transform: translate(-20%);
+}
+
+
+/********************part1************/
+
+.par1LRPage {
+    position: relative;
+    background-color: #ffff;
+    width: 496px;
+    height: 640px;
+    top: 107px;
+    left: 50%;
+    border-radius: 9px;
+    padding: 10px;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+
+/******part11*****/
+
+.par11LRPage {
+    position: relative;
+    width: 433px;
+    height: 123px;
+    margin: 150px auto;
+}
+
+.part11LRPage {
+    text-align: center;
+}
+
+.part11LRPage h1 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.par11LRPage p {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+/******part12***UserName**/
+
+.part12LRPage {
+    position: relative;
+    /* height: 55px; */
+    width: 425px;
+    margin: 23px auto;
+    /* background-color: aqua; */
+}
+
+.part121LRP {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.part122LRP input {
+    position: relative;
+    width: 425px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+
+/******part123***password**/
+
+.part123LRPage {}
+
+.part124LRPage .inputPassword {
+    position: relative;
+    border-radius: 10px;
+    width: 425px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+.part126LRPage .inputEmail {
+    position: relative;
+    border-radius: 10px;
+    width: 425px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+
+/*****button login******/
+
+.lastPart12LRPage {
+    position: relative;
+    /* background-color: chartreuse; */
+}
+
+.lastPart12LRPage .showL,
+.lastPart12LRPage .showR {
+    position: relative;
+    width: 344px;
+    height: 40px;
+    background: #18B69B;
+    border-radius: 10px;
+    top: 64px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.noShowL {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.noShowR {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.part13LRPage {
+    position: static;
+    margin: 110px auto;
+    /* display: flex; */
+    /* justify-content: ; */
+    /* background-color: black; */
+}
+
+.part13LRPage button {
+    background-color: #ffff;
+    text-decoration: underline;
+    color: blue;
+}
+
+.part13LRPage .loginState {
+    background-color: aquamarine;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}

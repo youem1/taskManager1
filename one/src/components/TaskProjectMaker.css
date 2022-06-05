@@ -1,0 +1,73 @@
+.allTaskProjectMaker {
+    /* border-bottom: #878787 solid 2pt; */
+    margin-top: 5px;
+}
+
+.allTaskProjectMaker .specialMember {
+    /* border: 2pt solid black; */
+}
+
+.allTaskProjectMaker .specialMember .generalInfo {
+    /* background-color: aqua; */
+    padding: 5px;
+    border-top: #878787 solid 2pt;
+    /* border-bottom: #cccccc solid 1pt; */
+}
+
+.allTaskProjectMaker .specialMember .generalInfo button {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.allTaskProjectMaker .specialMember .generalInfo button:hover {
+    background-color: #87878727;
+}
+
+.allTaskProjectMaker .specialMember .generalInfo .taskBtn {
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-image: url(./public/photo/plus.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.allTaskProjectMaker .specialMember .generalInfo .deleteMemberBtn {
+    float: right;
+    margin-right: 50px;
+    width: 17px;
+    height: 17px;
+    background-image: url(./public/photo/delete.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.allTaskProjectMaker .specialMember .taskInfoOpen {
+    /* background-color: green; */
+}
+
+.allTaskProjectMaker .specialMember .taskInfoOpen div {
+    border-top: #cccccc solid 2pt;
+    padding: 5px;
+}
+
+.allTaskProjectMaker .specialMember .taskInfoClose {
+    height: 0px;
+    overflow: hidden;
+}
+
+.addNewTask {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+
+/********************************/
