@@ -26,6 +26,8 @@ const LRPage=(props)=>{
             }
         })
 
+        props.refresh();
+
 
     }
 
@@ -48,15 +50,15 @@ const LRPage=(props)=>{
     }
 
 
-    const blur_user_input=(event)=>{
+    const change_user_input=(event)=>{
         setName(event.target.value)
 
     }
-    const blur_password_input=(event)=>{
+    const change_password_input=(event)=>{
         setPassword(event.target.value)
         
     }
-    const blur_email_input=(event)=>{
+    const change_email_input=(event)=>{
         setEmail(event.target.value)
         
     }
@@ -78,14 +80,14 @@ const LRPage=(props)=>{
                         <span>username</span>
                     </div>
                     <div className="part122LRP">
-                        <input type="text" onBlur={blur_user_input} />
+                        <input type="text" onBlur={change_user_input} />
                     </div>
                     <div className="part123LRPage">
                         <span>password</span>
 
                     </div>
                     <div className="part124LRPage">
-                        <input type="password" className='inputPassword' onBlur={blur_password_input}/>
+                        <input type="password" className='inputPassword' onBlur={change_password_input}/>
 
                     </div>
                     <div className={"part125LRPage "+(!isCreate ? 'noShowR':'')}>
@@ -93,7 +95,7 @@ const LRPage=(props)=>{
 
                     </div>
                     <div className={"part126LRPage "+(!isCreate ? 'noShowR':'')}>
-                        <input type="text" className='inputEmail' onBlur={blur_email_input}/>
+                        <input type="text" className='inputEmail' onBlur={change_email_input}/>
 
                     </div>
                     <div className="lastPart12LRPage">

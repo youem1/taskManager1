@@ -1,0 +1,86 @@
+.allProfile {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.allProfile .headerProfile {
+    position: static;
+    width: 100vw;
+    height: 30vh;
+    background-color: red;
+    background-image: url(./public//photo/profile-bg.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.allProfile .headerProfile .imageProfile {
+    position: absolute;
+    width: 23vh;
+    height: 23vh;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 2pt 2pt 8pt #ffff;
+    background-image: url(./public//photo/user-profile.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.allProfile .headerProfile .contentHeaderProfile {
+    position: absolute;
+    width: 100vw;
+    height: 14.5vh;
+    /* background-color: aquamarine; */
+}
+
+
+/*body*/
+
+.bodyProfile {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background: rgb(244, 223, 232);
+    background: radial-gradient(circle, rgb(208, 233, 245) 0%, rgba(221, 230, 240, 1) 100%);
+    padding: 110px;
+}
+
+.bodyProfile div {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* background-color: chocolate; */
+}
+
+.bodyProfile div .keyProfile {
+    width: 40vw;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.bodyProfile div .valueProfile {
+    position: relative;
+    width: 60vw;
+}
+
+.bodyProfile div .valueProfile input {
+    border-radius: 10px;
+    border: 1px dashed #a0a0a0;
+    padding: 5px;
+    width: 350px;
+    height: 32px;
+}

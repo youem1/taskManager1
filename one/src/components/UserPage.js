@@ -6,6 +6,7 @@ import TaskList from './TaskList';
 import CreaTask from './CreateTask';
 import { useSelector,useDispatch } from 'react-redux';
 import { useState } from 'react';
+import Profile from './Profile';
 
 
 const UserPage=()=>{
@@ -23,6 +24,8 @@ const UserPage=()=>{
             case 'task':
                 setContent(<TaskList projects={getProjectInfo} refresh={need_refresh}/>);
                 break;
+            case 'profile':
+                setContent(<Profile projects={getProjectInfo} refresh={need_refresh}/>);
 
         }
 

@@ -6,6 +6,8 @@ const store1 = (state = defaultState, action) => {
             return { page: 'project', isLogin: state.isLogin };
         case 'GO_TASK_PAGE':
             return { page: 'task', isLogin: state.isLogin };
+        case 'GO_PROFILE_PAGE':
+            return { page: 'profile', isLogin: state.isLogin };
         case 'IS_LOGIN':
             return { page: state.page, isLogin: true }
 

@@ -33,6 +33,11 @@ export const goTaskPage = () => {
         type: 'GO_TASK_PAGE'
     }
 }
+export const goProfilekPage = () => {
+    return {
+        type: 'GO_PROFILE_PAGE'
+    }
+}
 
 export const login = () => {
     return {

@@ -1,6 +1,7 @@
 .allCreateProjectOpen {
     position: fixed;
     background-color: #ffffff;
+    border: dashed #D9D9D9 1pt;
     width: 700px;
     height: 450px;
     left: 50%;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './MainMenue.css';
 import { useDispatch ,useSelector} from 'react-redux';
-import {goProjectPage,goTaskPage} from '../actions';
+import {goProjectPage,goTaskPage,goProfilekPage} from '../actions';
 // import './public/project-icon.png'
 
 const MainMenue=(props)=>{
@@ -23,12 +23,16 @@ const MainMenue=(props)=>{
 
     }
 
+    const click_profile_btn=()=>{
+        dispatch(goProfilekPage());
+        props.refresh();
+    }
+
 
     return (
         <div className="allMainMenue" >
             <div className="part1MainMenue">
                 <div className="button1MainMenue"  ></div>
-
             </div>
             <div className="part2MainMenue">
             <div className="button2MainMenue" onClick={click_project_btn}></div>
@@ -39,7 +43,7 @@ const MainMenue=(props)=>{
                 
             </div>
             <div className="part4MainMenue">
-            <div className="button4MainMenue"></div>
+            <div className="button4MainMenue" onClick={click_profile_btn}></div>
                 
             </div>
             <div className="part5MainMenue">
