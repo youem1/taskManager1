@@ -84,3 +84,14 @@
     width: 350px;
     height: 32px;
 }
+
+.bodyProfile div .sendChangeProfile {
+    margin: 0 auto;
+}
+
+.bodyProfile div .sendChangeProfile button {
+    width: 150px;
+    height: 40px;
+    background: #18B69B;
+    border-radius: 10px;
+}
