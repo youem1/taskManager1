@@ -1,65 +1,69 @@
 .allMainMenue {
     position: fixed;
     /* background-color: red; */
-    width: 400px;
-    height: 400px;
-    bottom: 0px;
-    right: 0px;
+    width: 800px;
+    height: 800px;
+    bottom: -375px;
+    right: -355px;
     z-index: 1;
 }
 
-.part1MainMenue,
-.part2MainMenue,
-.part3MainMenue,
-.part4MainMenue,
-.part5MainMenue {
-    position: relative;
-    width: 100%;
-    height: 20%;
-    /* background-color: yellow;
-    border: 1pt solid black; */
+.itemsMainMenue .part2MainMenue,
+.itemsMainMenue .part3MainMenue,
+.itemsMainMenue .part4MainMenue {
+    position: absolute;
+    width: 800px;
+    height: 10%;
+    /* background-color: yellow; */
+    /* border: 1pt solid black;*/
+    top: 360px;
 }
 
-.buttonMainMenue,
-.button1MainMenue,
+
+/*  */
+
+.itemsMainMenue .part2MainMenue {
+    transform: rotate(67.5deg);
+    -webkit-transform: rotate(67.5deg);
+    -moz-transform: rotate(67.5deg);
+    -ms-transform: rotate(67.5deg);
+    -o-transform: rotate(67.5deg);
+}
+
+.itemsMainMenue .part3MainMenue {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.itemsMainMenue .part4MainMenue {
+    transform: rotate(22.5deg);
+    -webkit-transform: rotate(22.5deg);
+    -moz-transform: rotate(22.5deg);
+    -ms-transform: rotate(22.5deg);
+    -o-transform: rotate(22.5deg);
+}
+
 .button2MainMenue,
 .button3MainMenue,
-.button4MainMenue,
-.button5MainMenue {
-    position: absolute;
-    /* background-color: brown; */
-    border: 2pt solid white;
+.button4MainMenue {
+    position: relative;
+    background-color: brown;
+    border: 2pt dashed rgba(255, 255, 255, 0.548);
     width: 60px;
     height: 60px;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%);
     border-radius: 50%;
     cursor: pointer;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 2pt 2pt 2pt 2pt rgba(255, 255, 255, 0.565);
-}
-
-.buttonMainMenue,
-.button1MainMenue {
-    right: 0px;
-}
-
-.button1MainMenue,
-.button5MainMenue {
-    background-image: url(./public/photo/next.png);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #2663EB;
-}
-
-.button1MainMenue {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    z-index: 1;
 }
 
 .button2MainMenue {
@@ -68,7 +72,7 @@
     background-color: #F59E0B;
     background-repeat: no-repeat;
     background-position: center;
-    right: 20%;
+    rotate: -67.5deg;
 }
 
 .button3MainMenue {
@@ -77,24 +81,18 @@
     background-color: #7B3AED;
     background-repeat: no-repeat;
     background-position: center;
-    right: 40%;
+    rotate: -45deg;
 }
 
 .button4MainMenue {
-    right: 60%;
+    /*right: 60%;
+    */
     background-color: #EC479A;
     background-image: url(public/photo/user.png);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.button5MainMenue {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
+    rotate: -22.5deg;
 }
 
 .buttonMainMenue {
@@ -155,4 +153,159 @@
     background-color: #79ed3a;
     left: -100px;
     /* visibility: hidden; */
+}
+
+
+/*********controller*/
+
+.controlerMainMenue {
+    position: absolute;
+    /* background-color: rgb(229, 255, 0); */
+    width: 800px;
+    height: 800px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.controlerMainMenue .nextPart,
+.controlerMainMenue .leftPart {
+    position: absolute;
+    width: 800px;
+    height: 10%;
+    /* background-color: rgb(89, 0, 255); */
+    top: 360px;
+}
+
+.controlerMainMenue .nextPart {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    z-index: 2;
+}
+
+.controlerMainMenue .nextPart .buttonNext,
+.controlerMainMenue .leftPart .buttonLeft {
+    visibility: hidden;
+}
+
+.controlerMainMenue .nextPart .buttonClose {
+    background-image: url(./public/photo/menu.png);
+    background-position: center;
+    background-size: 67%;
+    background-repeat: no-repeat;
+    border: 2pt dashed #9b9b9b;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 42%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    background-color: #ffff;
+    rotate: 90deg;
+    /* cursor: progress; */
+}
+
+.controlerMainMenue .nextPart .buttonNext {
+    background-color: #ffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    border: 2pt dashed #9b9b9b;
+    background-image: url(./public/photo/next.png);
+    background-position: center;
+    background-size: 67%;
+    background-repeat: no-repeat;
+    rotate: -90deg;
+}
+
+.controlerMainMenue .leftPart .buttonLeft {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    border: 2pt dashed #9b9b9b;
+    background-color: #ffff;
+    background-image: url(./public/photo/next.png);
+    background-position: center;
+    background-size: 67%;
+    background-repeat: no-repeat;
+    rotate: 90deg;
+}
+
+.closeMainMenue {
+    position: absolute;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    animation: 'no-open' 1s;
+}
+
+@keyframes no-open {
+    0% {
+        left: 0%;
+        visibility: visible;
+        transform: translate(0%);
+        -webkit-transform: translate(0%);
+        -moz-transform: translate(0%);
+        -ms-transform: translate(0%);
+        -o-transform: translate(0%);
+    }
+    52% {
+        visibility: hidden;
+    }
+    100% {
+        left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+    }
+}
+
+.openMainMenue {
+    position: absolute;
+    visibility: visible !important;
+    animation: 'open' 1s;
+    -webkit-animation: 'open' 1s;
+    left: 0%;
+    visibility: visible;
+    transform: translate(0%);
+}
+
+@keyframes open {
+    0% {
+        left: 50%;
+        visibility: hidden;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+    }
+    47% {
+        visibility: visible;
+    }
+    100% {
+        left: 0%;
+        transform: translate(0%);
+        -webkit-transform: translate(0%);
+        -moz-transform: translate(0%);
+        -ms-transform: translate(0%);
+        -o-transform: translate(0%);
+    }
 }

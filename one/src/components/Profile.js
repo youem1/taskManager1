@@ -17,6 +17,7 @@ const Profile=()=>{
 
     return(
         <div className="allProfile">
+            <div className="bgImage1"></div>
             <div className="headerProfile">
                 <div className="imageProfile">
 

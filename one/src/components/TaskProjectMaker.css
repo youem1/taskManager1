@@ -12,34 +12,33 @@
     padding: 5px;
     border-top: #878787 solid 2pt;
     /* border-bottom: #cccccc solid 1pt; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .allTaskProjectMaker .specialMember .generalInfo button {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    width: 20px;
+    height: 20px;
 }
 
 .allTaskProjectMaker .specialMember .generalInfo button:hover {
     background-color: #87878727;
 }
 
-.allTaskProjectMaker .specialMember .generalInfo .taskBtn {
-    float: right;
-    width: 15px;
-    height: 15px;
-    background-image: url(./public/photo/plus.png);
-    background-size: cover;
+.allTaskProjectMaker .specialMember .generalInfo .commentBtn {
+    background-image: url(./public/photo/comment.png);
     background-position: center;
+    background-size: 100%;
+}
+
+.allTaskProjectMaker .specialMember .generalInfo .taskBtn {
+    background-image: url(./public/photo/plus.png);
+    background-size: 72%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .allTaskProjectMaker .specialMember .generalInfo .deleteMemberBtn {
-    float: right;
-    margin-right: 50px;
-    width: 17px;
-    height: 17px;
     background-image: url(./public/photo/delete.png);
     background-size: cover;
     background-position: center;

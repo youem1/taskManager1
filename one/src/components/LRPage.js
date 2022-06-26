@@ -17,14 +17,14 @@ const LRPage=(props)=>{
             "username": name,
             "password": password
           }}
-        axios.post('http://localhost:9000/auth/login',body).then((response)=>{
-            if(response.code!="ERR_BAD_REQUEST"){
-                props.refresh();
+        // axios.post('http://localhost:9000/auth/login',body).then((response)=>{
+        //     if(response.code!="ERR_BAD_REQUEST"){
+        //         props.refresh();
 
-            }else{
-                console.log(response.code);
-            }
-        })
+        //     }else{
+        //         console.log(response.code);
+        //     }
+        // })
 
         props.refresh();
 

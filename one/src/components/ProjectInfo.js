@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectInfo.css';
 import {useDispatch,useSelector} from 'react-redux';
-import {openCreateTa} from '../actions'
+import {openCreateTa,openInvite,openCreateCo} from '../actions'
 import TaskProjectMaker from './TaskProjectMaker';
 
 const ProjectInfo=(props)=>{
@@ -9,6 +9,7 @@ const ProjectInfo=(props)=>{
     const members=[];
     const [windowProjectState,setWindowProjectState]=useState('open');
     const [showMembers,setShowMembers]=useState(false);
+    const dispatch=useDispatch()
 
     for(let x in project.members){
         members.push(project.members[x]);
@@ -25,20 +26,27 @@ const ProjectInfo=(props)=>{
         setShowMembers(!showMembers);
 
     }
+    const click_add_new_member=()=>{
+        dispatch(openInvite());
+        console.log('request for inviting memeber');
 
+    }
 
  
-
+    const click_comment_button=()=>{
+        dispatch(openCreateCo())
+    }
     return(
         <div className="allProjectInfo">
             <div className="generalInfoProjectInfo">
                 <span>{project.projectName}</span>
-                <span>{project.dateOfCreate}</span>
+   
                 <span>{project.role}</span>
                 <span>{project.endTimeProject}</span>
+                <span><button className='commentBtnP' onClick={click_comment_button}></button ></span>
                 <span><button className='deleteProjectBtn'></button></span>
 
-                <button  className='members' value='memebers' onClick={click_members_button}></button>
+                <span><button  className='members' value='memebers' onClick={click_members_button}></button></span>
             </div>
 
             <div className={showMembers ? "membersProjectInfoOpen":"membersProjectInfoClose"}>
@@ -50,7 +58,7 @@ const ProjectInfo=(props)=>{
                     );
                 
                 })}
-                <button className='addNewMember' >add_new_member</button>
+                <button className='addNewMember' onClick={click_add_new_member}>add_new_member</button>
 
             </div>
 

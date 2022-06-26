@@ -4,7 +4,7 @@ import {useDispatch,useSelector} from 'react-redux';
 import {closeCreatePr,openCreatePr} from '../actions';
 
 
-const CreateProject=()=>{
+const CreateProject=(props)=>{
     const [sprints,setSprints]=useState([]);
     const [refresh,setRefresh]=useState(false);
     const [sprintText,setSprintText]=useState([]);
@@ -22,7 +22,9 @@ const CreateProject=()=>{
 
     }
 
-    
+    const click_create_project=()=>{
+        // props.createProject('taskManager','2022/11/6',[{name:'state1',tasks:[]}],[]);
+    }
     const on_blur_sprint=(event)=>{
         let check=false;
         const fakeSprintText=sprintText;
@@ -106,7 +108,7 @@ const CreateProject=()=>{
             </div>
 
             <div className="part3CreateProject">
-                <button className='createButton'>create</button>
+                <button className='createButton' onClick={click_create_project}>create</button>
             </div>
 
         </div>

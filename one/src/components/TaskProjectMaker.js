@@ -1,11 +1,13 @@
 import React,{useState} from 'react';
 import './TaskProjectMaker.css';
-import {useDispatch} from 'react-redux';
-import {openCreateTa} from '../actions'
+import {useDispatch,useSelector} from 'react-redux';
+import {openCreateTa,openCreateCo} from '../actions';
+
 
 
 const TaskProjectMaker=(props)=>{
     const [showTasks,setShowTasks]=useState(false);
+  
 
     const dispatch=useDispatch();
     const add_new_task=(member)=>{
@@ -17,13 +19,20 @@ const TaskProjectMaker=(props)=>{
         setShowTasks(!showTasks);
 
     }
+
+    const click_comment_button=()=>{
+        dispatch(openCreateCo());
+
+    }
     return (
         <div className="allTaskProjectMaker">
+
             <div key={props.name} className='specialMember'>
                 <div className='generalInfo'>
                     <span>{props.name}</span>
-                    <span><button  value='tasks' onClick={click_tasks} className="taskBtn"></button></span>
+                    <span><button className='commentBtn' onClick={click_comment_button}></button></span>
                     <span><button className='deleteMemberBtn'></button></span>
+                    <span><button  value='tasks' onClick={click_tasks} className="taskBtn"></button></span>
                 </div>
                 <div className={showTasks ?'taskInfoOpen':'taskInfoClose'}>
 

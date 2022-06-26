@@ -1,6 +1,6 @@
-const defaultState = { page: 'home', isLogin: false };
+const defaultState = { page: 'project', isLogin: false };
 
-const store1 = (state = defaultState, action) => {
+const store1 = (state = 'project', action) => {
     switch (action.type) {
         case 'GO_PROJECT_PAGE':
             return { page: 'project', isLogin: state.isLogin };
@@ -12,7 +12,7 @@ const store1 = (state = defaultState, action) => {
             return { page: state.page, isLogin: true }
 
         default:
-            return { page: 'home', isLogin: state.isLogin };
+            return { page: 'project', isLogin: state.isLogin };
     }
 
 }

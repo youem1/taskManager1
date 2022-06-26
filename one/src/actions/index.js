@@ -44,3 +44,39 @@ export const login = () => {
         type: 'IS_LOGIN'
     }
 }
+
+export const openCreateRe = () => {
+    return {
+        type: 'CREATE_REPORT'
+    }
+}
+
+export const closeCreateRe = () => {
+    return {
+        type: 'NO_CREATE_REPORT'
+    }
+}
+
+export const openCreateCo = () => {
+    return {
+        type: 'CREATE_COMMENT'
+    }
+}
+
+export const closeCreateCo = () => {
+    return {
+        type: 'NO_CREATE_COMMENT'
+    }
+}
+
+export const openInvite = () => {
+    return {
+        type: 'INVITE'
+    }
+}
+
+export const closeInvite = () => {
+    return {
+        type: 'NO_INVITE'
+    }
+}
